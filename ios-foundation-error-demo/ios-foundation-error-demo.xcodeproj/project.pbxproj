@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96D0D4841EC0339700E8CE4A /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D0D4831EC0339700E8CE4A /* CustomError.swift */; };
 		B67B24551E5CAA4D006E514E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67B24541E5CAA4D006E514E /* AppDelegate.swift */; };
 		B67B24571E5CAA4D006E514E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67B24561E5CAA4D006E514E /* ViewController.swift */; };
 		B67B245A1E5CAA4D006E514E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B67B24581E5CAA4D006E514E /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		96D0D4831EC0339700E8CE4A /* CustomError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		B67B24511E5CAA4D006E514E /* ios-foundation-error-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-foundation-error-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B67B24541E5CAA4D006E514E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B67B24561E5CAA4D006E514E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				B67B24541E5CAA4D006E514E /* AppDelegate.swift */,
+				96D0D4831EC0339700E8CE4A /* CustomError.swift */,
 				B67B24561E5CAA4D006E514E /* ViewController.swift */,
 				B67B24581E5CAA4D006E514E /* Main.storyboard */,
 				B67B245B1E5CAA4D006E514E /* Assets.xcassets */,
@@ -264,6 +267,7 @@
 			files = (
 				B67B24571E5CAA4D006E514E /* ViewController.swift in Sources */,
 				B67B24551E5CAA4D006E514E /* AppDelegate.swift in Sources */,
+				96D0D4841EC0339700E8CE4A /* CustomError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +518,7 @@
 				B67B247B1E5CAA4D006E514E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B67B247C1E5CAA4D006E514E /* Build configuration list for PBXNativeTarget "ios-foundation-error-demoTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +527,7 @@
 				B67B247E1E5CAA4D006E514E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B67B247F1E5CAA4D006E514E /* Build configuration list for PBXNativeTarget "ios-foundation-error-demoUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +536,7 @@
 				B67B24811E5CAA4D006E514E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

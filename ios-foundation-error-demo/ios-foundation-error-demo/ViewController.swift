@@ -8,12 +8,6 @@
 
 import UIKit
 
-/// Errorプロトコルに準拠した列挙型
-enum CustomError: Error {
-    case incorrectSourceUrl
-    case incorrectDestinationPath
-}
-
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
@@ -35,10 +29,10 @@ class ViewController: UIViewController {
                 // urlからデータを生成できない場合
                 throw CustomError.incorrectSourceUrl
             }
-            
+
             let destinationPath = "test.jpg"
             let destinationURL = URL(fileURLWithPath: destinationPath)
-            if destinationURL.isFileURL == false {
+            if !destinationURL.isFileURL {
                 // 保存先がファイルPATHでない場合
                 throw CustomError.incorrectDestinationPath
             }
@@ -49,13 +43,11 @@ class ViewController: UIViewController {
                 print("\(error.localizedDescription)")
                 showErrorAlert(error: error)
             }
-            
-        } catch CustomError.incorrectSourceUrl {
-            print("URLが不正です。")
-        } catch CustomError.incorrectDestinationPath {
-            print("保存先のPATHが不正です。")
-        } catch {
-            print("不明なエラーです。")
+        } catch let error as CustomError {
+            // descriptionを定義したので、printにerrorを渡せば定義した文字列が出力される
+            print(error)
+        } catch let error {
+            print(error.localizedDescription)
         }
     }
     
